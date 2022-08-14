@@ -8,7 +8,7 @@ public class MovingCube : MonoBehaviour
     [SerializeField] Vector3 desPoint;    // 목표지점.
     [SerializeField] Vector3 startPoint;  // 시작 지점.
     float startTime;
-    void Start()
+    public void Start()
     {
         startPoint = new Vector3(transform.localPosition.x, transform.position.y, transform.localPosition.z);
         desPoint = new Vector3(-startPoint.x, startPoint.y, -startPoint.z);
@@ -21,7 +21,7 @@ public class MovingCube : MonoBehaviour
     public float elapsTime;
     public float 나머지빼기1;
     public float time;
-    void Update()
+    public void Update()
     {
         elapsTime = Time.time - startTime;
         나머지빼기1 = elapsTime % 2 - 1f;

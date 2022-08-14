@@ -316,7 +316,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603170484}
   m_LocalRotation: {x: -0, y: 0.38268343, z: -0, w: 0.92387956}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3, y: 0, z: 3}
   m_LocalScale: {x: 2.9895782, y: 0.5141208, z: 2.9895782}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -472,6 +472,7 @@ MonoBehaviour:
   stackedCube: {fileID: 0}
   level: 0
   distance: 3
+  waitSeconds: 0.6
 --- !u!4 &815034718
 Transform:
   m_ObjectHideFlags: 0
