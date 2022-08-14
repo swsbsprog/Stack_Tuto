@@ -14,9 +14,10 @@ public class GameManager : MonoBehaviour
         cubeHeight = baseCube.transform.localScale.y;
         CreateCube();
 
-        yield return new WaitForSeconds(waitSeconds);
-        OnKeyDown();
-        Debug.Break();
+        //yield return new WaitForSeconds(waitSeconds);
+        //OnKeyDown();
+        //Debug.Break();
+        yield return null;
     }
     public int level;
     public float distance = 3;
@@ -40,15 +41,16 @@ public class GameManager : MonoBehaviour
         if (this.movingCube != null)
         {
             newCube.pivot = this.movingCube.transform.localPosition;
-            newCube.Start();
-            newCube.Update();
+            //Debug.Break();
+            //newCube.Start();
+            //newCube.Update();
         }
         movingCube = newCube;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.anyKeyDown)
         {
             OnKeyDown();
         }
